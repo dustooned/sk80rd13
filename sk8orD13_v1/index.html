@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Custom Skateboard Build – Pool/Transition Mid-Tier</title>
+<style>
+    /* 🎨 Gradient Background Parameters */
+    :root {
+      --gradient-angle: 135deg;
+      --gradient-start: #ffa600;
+      --gradient-end: #da1a5d;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      min-height: 100vh;
+      background: linear-gradient(var(--gradient-angle), var(--gradient-start), var(--gradient-end));
+      color: #222;
+    }
+    h1 {
+      color: #ffffff;
+    }
+    details {
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #fff;
+    }
+    summary {
+      font-size: 1.25rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #c0392b;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1em;
+    }
+    li::before {
+      content: "🛠️ ";
+      margin-right: 0.3em;
+    }
+    .alt {
+      font-size: 0.95em;
+      color: #666;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .logo-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+      filter: drop-shadow((0 8px 20px rgba(0, 0, 0, 0.5)));
+      transition: transform 1s ease, filter 0.8s ease;
+    }
+
+    .logo-img:hover {
+      transform: rotate(720deg) scale(1.1);
+      filter: brightness(1.2) drop-shadow(0 0px 3px rgba(0, 0, 0, 1));
+    }
+  </style>
+
+<audio id="bg-music" autoplay loop>
+  <source src="assets/background.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+<button id="audio-toggle" style="margin: 1rem;">🔇</button>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const toggle = document.getElementById('audio-toggle');
+
+  toggle.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      audio.muted = false;
+      toggle.textContent = '🔊';
+    } else {
+      audio.muted = !audio.muted;
+      toggle.textContent = audio.muted ? '🔇' : '🔊';
+    }
+  });
+</script>
+
+</head>
+<body>
+<header style="text-align: center; margin-bottom: 2rem;">
+  <img alt="Logo" class="logo-img" src="assets/logo.png" />
+</header>
+<h1>🛹 Custom Skateboard Build – Mid-Tier (Travel + Pool/Transition)</h1>
+<details>
+<summary>✅ Sample Functional Kit (to ask for at skate shops)</summary>
+<ul>
+<li><strong>Deck Type:</strong> "Shaped transition deck" or "pool/bowl deck" – around 8.75" to 9.0" wide</li>
+<li><strong>Example Deck:</strong> <a href="https://www.tactics.com/santa-cruz/roskopp-face-reissue-skateboard-deck" target="_blank">Santa Cruz Roskopp Face Reissue 9.0"</a><br/>
+<span class="alt">Alt: Powell Peralta Ripper Reissue, Creature Gravette Pro, Welcome directional decks (8.75")</span>
+</li>
+<li><strong>Trucks Type:</strong> Standard kingpin trucks for pool/transition<br/>
+<strong>Ask for:</strong> Independent 159 or Thunder 161<br/>
+<span class="alt">Alt: Ace AF1 66 (for more carve)</span>
+</li>
+<li><strong>Wheels Type:</strong> Hard park/pool wheels (97A–99A), 56–58mm<br/>
+<strong>Ask for:</strong> Bones SPF P5 56mm 97A<br/>
+<span class="alt">Alt: OJ Elite Mini Combo 58mm 99A, Spitfire Formula Four 97A</span>
+</li>
+<li><strong>Bearings:</strong> High-quality steel bearings for park
+        <br/><strong>Ask for:</strong> Bones Reds
+        <br/><span class="alt">Alt: Bronson G2s, Mini Logo</span>
+</li>
+<li><strong>Grip Tape:</strong> Standard or clear griptape (medium grit)<br/>
+<strong>Ask for:</strong> Mob Grip or Jessup
+      </li>
+<li><strong>Hardware:</strong> 1" bolts, optional 1/8" risers<br/>
+<strong>Ask for:</strong> Independent hardware, Shorty’s, or Shake Junt
+      </li>
+</ul>
+</details>
+<details>
+<summary>🎨 Aesthetic Build – Black x Red x Chrome (Style-Forward)</summary>
+<ul>
+<li><strong>Deck Type:</strong> Directional shaped deck with artwork (pool/transition oriented)<br/>
+<strong>Ask for:</strong> Welcome "Slappy Hour" 8.75" or Creature Gravette Pro<br/>
+<span class="alt">Alt: Antihero Team 8.75", Santa Cruz reissues</span>
+</li>
+<li><strong>Trucks Type:</strong> Polished or blackout standard trucks<br/>
+<strong>Ask for:</strong> Independent 159 Black Out or Thunder 161 Polished Hi<br/>
+<span class="alt">Alt: Ace AF1 Silver, Krux K5 Polished</span>
+</li>
+<li><strong>Wheels Type:</strong> 99A red urethane wheels, 56–58mm<br/>
+<strong>Ask for:</strong> OJ Elite 58mm 99A Red<br/>
+<span class="alt">Alt: Spitfire F4 Radials, Ricta Sparx Red</span>
+</li>
+<li><strong>Bearings:</strong> Red-shielded performance bearings<br/>
+<strong>Ask for:</strong> Bronson G2s or Bones Swiss<br/>
+</li>
+<li><strong>Grip Tape:</strong> Clear or custom color grip<br/>
+<strong>Ask for:</strong> Mob Clear, Jessup Red or graphic grip</li>
+<li><strong>Hardware:</strong> Colored bolt hardware (1"), optional risers<br/>
+<strong>Ask for:</strong> Independent Red hardware, Mini Logo risers
+      </li>
+</ul>
+</details>
+<details>
+<summary>💡 Tips for Communication in Shops</summary>
+<ul>
+<li>Say you're looking for a <strong>pool/bowl/transition setup</strong> with a <strong>shaped or directional deck</strong>.</li>
+<li>Request trucks in the <strong>159–161mm range</strong> to match deck widths of 8.75–9.0".</li>
+<li>Wheels should be labeled as <strong>97A to 99A park formula</strong> in the 56–58mm range.</li>
+<li>Bearings: Ask for <strong>Bones Reds or better</strong>, and griptape should have medium grit.</li>
+</ul>
+</details>
+<details><summary>📘 Dev Notes – What This Page Teaches You</summary>
+<ul>
+<li><strong>Dropdown Sections:</strong> Using <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> for mobile-friendly collapsible menus.</li>
+<li><strong>CSS Variables:</strong> Created <code>:root</code> variables for a customizable linear gradient background.</li>
+<li><strong>Responsive Design:</strong> Applied <code>min-height: 100vh</code> to ensure full viewport coverage.</li>
+<li><strong>Image Hover Animations:</strong> Used <code>transform</code> and <code>filter</code> for smooth spin/scale/brightness on hover.</li>
+<li><strong>Google Drive Integration:</strong> Embedded a Drive image using <code>?export=view&amp;id=...</code> link format.</li>
+<li><strong>Text Stroke:</strong> Applied <code>-webkit-text-stroke</code> for enhanced header contrast.</li>
+<li><strong>Z-Index Control:</strong> Positioned header above background using <code>position: relative</code> and <code>z-index</code>.</li>
+</ul>
+<p>This file is ready for deployment or further expansion with JavaScript, sprites, or GitHub Pages hosting.</p>
+</details></body>
+</html>

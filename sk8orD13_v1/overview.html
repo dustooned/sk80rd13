@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Development Notes – Custom Skateboard Build Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background: #f8f9fa;
+      color: #333;
+    }
+    h1, h2 {
+      color: #c0392b;
+    }
+    code {
+      background: #eee;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1em;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛹 Development Notes – Custom Skateboard Build HTML Page</h1>
+
+  <h2>1. HTML Structure Using <code>&lt;details&gt;</code> Dropdowns</h2>
+  <p>You used collapsible sections for a clean, mobile-friendly layout:</p>
+  <pre><code>&lt;details&gt;
+  &lt;summary&gt;Section Title&lt;/summary&gt;
+  ...content...
+&lt;/details&gt;</code></pre>
+
+  <h2>2. CSS Variables for Reusable Styling</h2>
+  <p>Stored gradient parameters at the top of your CSS:</p>
+  <pre><code>:root {
+  --gradient-angle: 135deg;
+  --gradient-start: #f5f7fa;
+  --gradient-end: #c3cfe2;
+}</code></pre>
+
+  <h2>3. Fullscreen Gradient with Viewport Height</h2>
+  <p>Ensured the gradient filled the screen regardless of content height:</p>
+  <pre><code>body {
+  background: linear-gradient(var(--gradient-angle), var(--gradient-start), var(--gradient-end));
+  min-height: 100vh;
+}</code></pre>
+
+  <h2>4. Hover Animation for a Logo Image</h2>
+  <p>Used CSS to spin and glow the image on hover:</p>
+  <pre><code>.logo-img:hover {
+  transform: rotate(360deg) scale(1.1);
+  filter: brightness(1.2);
+}</code></pre>
+
+  <h2>5. Google Drive Image Embedding</h2>
+  <p>Converted a Drive URL for direct use in <code>&lt;img src="..."&gt;</code> or <code>background-image</code>:</p>
+  <pre><code>https://drive.google.com/uc?export=view&amp;id=YOUR_FILE_ID</code></pre>
+
+  <h2>6. Text Stroke for High-Contrast Headers</h2>
+  <p>Outlined the <code>&lt;h1&gt;</code> text to improve readability over gradients:</p>
+  <pre><code>h1 {
+  -webkit-text-stroke: 1px #000;
+}</code></pre>
+
+  <h2>7. Layer Management with <code>z-index</code></h2>
+  <p>Used <code>position: relative</code> and <code>z-index</code> to ensure the header logo was above background elements:</p>
+  <pre><code>&lt;header style="z-index: 10; position: relative;"&gt;</code></pre>
+
+  <h2>8. Export and Deployment</h2>
+  <p>You packaged this project into a GitHub-ready <code>.zip</code> including:</p>
+  <ul>
+    <li>Clean HTML structure</li>
+    <li>All CSS included inline</li>
+    <li>Mobile-friendly and interactive layout</li>
+  </ul>
+
+  <p>✔️ You're ready to deploy this page or iterate further!</p>
+</body>
+</html>
