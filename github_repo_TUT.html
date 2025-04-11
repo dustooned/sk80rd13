@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages Deployment Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #f4f6f9;
+      color: #333;
+    }
+    h1 {
+      color: #c0392b;
+      margin-bottom: 1.5rem;
+    }
+    details {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 1rem;
+      background-color: #fff;
+    }
+    summary {
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #c0392b;
+    }
+    code, pre {
+      background-color: #f0f0f0;
+      padding: 0.5em;
+      border-radius: 4px;
+      display: block;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 GitHub Pages Deployment Summary (With GitExtensions)</h1>
+
+  <details>
+    <summary>📁 Step 1: Prepare Your Project Folder</summary>
+    <p>Organize your project like this:</p>
+    <pre>
+sk8rd13/
+├── index.html
+└── assets/
+    ├── logo.png
+    └── background.mp3
+    </pre>
+  </details>
+
+  <details>
+    <summary>🧩 Step 2: Initialize Repository with GitExtensions</summary>
+    <ul>
+      <li>Open GitExtensions</li>
+      <li>Go to <strong>Repository → Create new repository</strong></li>
+      <li>Select your project folder</li>
+      <li>Click <strong>OK</strong> to initialize the repo</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>💾 Step 3: Stage and Commit Your Files</summary>
+    <ul>
+      <li>Select all files in the <em>Working Directory Changes</em></li>
+      <li>Click <strong>Stage</strong></li>
+      <li>Write a commit message like <code>Initial commit</code></li>
+      <li>Click <strong>Commit</strong></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🌐 Step 4: Create GitHub Repository</summary>
+    <ul>
+      <li>Go to <a href="https://github.com">GitHub</a></li>
+      <li>Click <strong>New Repository</strong></li>
+      <li>Name it (e.g. <code>sk80rd13</code>), make it Public or Private</li>
+      <li><strong>Do not</strong> initialize with README or .gitignore</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🔗 Step 5: Connect Remote in GitExtensions</summary>
+    <ul>
+      <li>Click <strong>Remote → Manage Remote Repositories</strong></li>
+      <li>Name: <code>origin</code></li>
+      <li>URL: <code>https://github.com/yourusername/sk80rd13.git</code></li>
+      <li>Click <strong>Save changes</strong>, then <strong>Yes</strong> when prompted to auto-configure</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>📤 Step 6: Push to GitHub</summary>
+    <ul>
+      <li>Click <strong>Remote → Push</strong></li>
+      <li>Make sure <code>origin</code> and <code>main</code> or <code>master</code> is selected</li>
+      <li>Click <strong>Push</strong></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>🌍 Step 7: Enable GitHub Pages</summary>
+    <ul>
+      <li>Go to your repository on GitHub</li>
+      <li>Click <strong>Settings → Pages</strong></li>
+      <li>Set <strong>Source</strong> to <code>main</code> branch, folder <code>/ (root)</code></li>
+      <li>Click <strong>Save</strong></li>
+      <li>GitHub will give you a public URL like: <br><code>https://yourusername.github.io/sk80rd13/</code></li>
+    </ul>
+  </details>
+
+</body>
+</html>
